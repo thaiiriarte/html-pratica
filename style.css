@@ -1,32 +1,79 @@
+/* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Inter', Arial, sans-serif; /* Fonte moderna */
+  background-color: #f5f7fa;              /* Fundo suave */
+  color: #333;                           /* Texto escuro para contraste */
+  max-width: 700px;                      /* Limita largura */
+  margin: 40px auto;                     /* Centraliza e dá espaçamento */
+  padding: 30px 20px;                   /* Espaçamento interno */
+  line-height: 1.6;                     /* Espaço entre linhas */
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;                   /* Centraliza o texto */
+  margin-bottom: 30px;                  /* Espaçamento embaixo */
+}
+
+header h1 {
+  font-weight: 700;                     /* Título em negrito */
+  font-size: 2.5rem;                   /* Tamanho maior */
+  margin-bottom: 10px;                 /* Espaçamento entre título e parágrafo */
   color: #222;
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 20px;
-  line-height: 1.6;
 }
 
-h1 {
-  color: #007acc;
+header p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
-img {
-  border-radius: 50%;
-  margin: 10px 0;
+/* Imagem */
+section img {
+  display: block;                      /* Remove espaços em linha */
+  margin: 0 auto 20px;                 /* Centraliza e espaça embaixo */
+  border-radius: 50%;                  /* Deixa a imagem redonda */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;                   /* Ajusta a imagem no espaço */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+/* Lista de interesses */
+section ul {
+  list-style: none;                    /* Remove marcadores */
+  padding: 0;
 }
 
-a {
-  color: #007acc;
+section ul li {
+  background-color: #e1e8f7;           /* Fundo azul clarinho */
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #344054;
+  transition: background-color 0.3s ease;
+}
+
+section ul li:hover {
+  background-color: #bac8f9;           /* Muda a cor no hover */
+  cursor: pointer;
+}
+
+/* Link do GitHub no rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #2563eb;                      /* Azul do link */
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-a:hover {
+footer a:hover {
+  color: #1e40af;                     /* Azul mais escuro no hover */
   text-decoration: underline;
 }
